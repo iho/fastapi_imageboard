@@ -12,8 +12,8 @@ config = Config('.env')
 DATABASE_URL = config('DATABASE_URL')
 
 # db variable
-database = databases.Database(DATABASE_URL)
-metadata = sqlalchemy.MetaData()
+# database = databases.Database(DATABASE_URL)
+# metadata = sqlalchemy.MetaData()
 
 # header image
 class Banner(BaseModel):
@@ -150,7 +150,7 @@ class Ban(BaseModel):
 #     sqlalchemy.Column("completed", sqlalchemy.Boolean),
 # )
 
-engine = sqlalchemy.create_engine(
-    DATABASE_URL, connect_args={}
-)
-metadata.create_all(engine)
+# engine = sqlalchemy.create_engine(
+#     DATABASE_URL, connect_args={}
+# )
+# metadata.create_all(engine)
